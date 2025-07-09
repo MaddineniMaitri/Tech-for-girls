@@ -5,7 +5,6 @@ const clickCounter = document.getElementById("clickCounter");
 const form = document.getElementById("registrationForm");
 const successMsg = document.getElementById("successMsg");
 
-// Check if already submitted
 if (localStorage.getItem("submitted") === "true") {
   form.classList.add("hidden");
   successMsg.classList.remove("hidden");
