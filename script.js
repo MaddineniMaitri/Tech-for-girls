@@ -34,20 +34,14 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  // Prepare form data
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const email = document.getElementById("email").value.trim();
   const college = document.getElementById("college").value.trim();
   const file = document.getElementById("screenshot").files[0];
-
-  // Placeholder: Save to Google Sheets (handled in next step)
-
-  // Disable form and show message
   form.classList.add("hidden");
   successMsg.classList.remove("hidden");
   localStorage.setItem("submitted", "true");
 
-  // For now: just log the data (you'll connect to Google Sheets later)
   console.log({ name, phone, email, college, file });
 });
